@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="PT">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="author" content="Michael D. Nascimento">
+  <title>Consulta CEP</title>
+
+  <!-- Bootstrap core CSS-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+
+</head>
+
+  <body class="fixed-nav sticky-footer bg-dark" id="page-top">
+
+      <div class="content-wrapper">
+        <div class="container-fluid">
+    
+    
+          <!-- Example DataTables Card-->
+          <div class="card" style="margin: 5%;">
+            <div class="card-header">
+              <i class="fa fa-user-plus"></i> Consulta CEP</div>
+            <div class="card-body">
+              <div class="table-responsive">
+
+                  <form class="container">
+                    <div class="form-row">
+                      <div class="col-md-2 mb-2">
+                        <label for="validationCustom09">CEP</label>
+                        <input type="text" name="cep_empresa" class="form-control" id="campoCEP" placeholder="_____-___" required size="10" maxlength="9" onblur="pesquisacep(this.value);">
+                      </div>
+                      <div class="col-md-6 mb-3">
+                        <label for="validationCustom10">Endereço</label>
+                        <input type="text" name="endereco_empresa" maxlength="270" class="form-control" id="endereco" placeholder="Endereço" required>
+                      </div>
+                      <div class="col-md-2 mb-1">
+                        <label for="validationCustom05">Número</label>
+                        <input type="text" name="numero_empresa" maxlength="10" class="form-control" id="validationCustom05" placeholder="n°" required>
+                      </div>
+                    </div>
+
+                    <div class="form-row">
+                      <div class="col-md-6 mb-3">
+                        <label for="validationCustom09">Complemento</label>
+                        <input type="text" name="complemento_empresa" maxlength="20" class="form-control" id="validationCustom09" placeholder="Complemento">
+                      </div>
+                      <div class="col-md-6 mb-3">
+                        <label for="validationCustom05">Bairro</label>
+                        <input type="text" name="bairro_empresa" maxlength="50" class="form-control" id="bairro" placeholder="Bairro">
+                      </div>
+                    </div>
+
+                    <div class="form-row">
+                      <div class="col-md-6 mb-3">
+                        <label for="validationCustom03">Cidade</label>
+                        <input type="text" name="cidade_empresa" maxlength="50" class="form-control" id="cidade" placeholder="Cidade" required>
+                      </div>
+                      <div class="col-md-6 mb-3">
+                        <label for="validationCustom04">UF</label>
+                        <input type="text" name="uf_empresa" maxlength="2" class="form-control" id="uf" placeholder="Estado" required>
+                      </div>
+                    </div>
+                  </form>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+<!-- /.container-fluid-->
+<!-- /.content-wrapper-->
+
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+    <!-- custom maskedinput-->
+    <script src="js/jquery.maskedinput.js"></script>
+    <script src="js/maske.js"></script>
+    <!-- Custom scripts for all pages-->
+    <script src="js/ConsultaCEP.js"></script>
+
+</body>
+<html>
